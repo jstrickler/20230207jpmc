@@ -1,0 +1,13 @@
+numpy
+scipy
+ipython
+jupyter
+pandas
+matplotlib
+seaborn
+paramiko
+requests
+memory-profiler
+pyqt
+cython
+numba
