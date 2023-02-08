@@ -15,10 +15,11 @@ def main(args):
     :param args: Command line arguments.
     :return: None
     """
-    function1()
+    x = 5
+    function1(x)
 
 # other functions
-def function1():
+def function1(value):
     """
     This is the docstring for function1().
 
@@ -26,5 +27,14 @@ def function1():
     """
     print("this is function1()")
 
+
+
+
+
+
+
+
 if __name__ == '__main__':
     main(sys.argv[1:])  # Pass command line args (minus script name) to main()
+
+
