@@ -1,4 +1,5 @@
 import numpy as np
+import scipy as sp  # not used here
 import pandas as pd
 
 NUM_VALUES = 10
@@ -10,6 +11,8 @@ s2 = pd.Series(np.linspace(1, 5, NUM_VALUES))  # create series with auto-generat
 
 print("s1:", s1, "\n")
 print("s2:", s2, "\n")
+
+print(f"s1['j']: {s1['j']}")
 
 print("selecting elements")
 print(s1[['h', 'b']], "\n")  # select items from series

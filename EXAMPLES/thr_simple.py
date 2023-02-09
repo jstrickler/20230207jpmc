@@ -1,8 +1,9 @@
 
-from threading import Thread
+from threading import Thread, Lock
 import random
 import time
 
+STDOUT_LOCK = Lock()
 
 class SimpleThread(Thread):
     def __init__(self, num):
@@ -11,7 +12,8 @@ class SimpleThread(Thread):
 
     def run(self):  # the function that does the work in the thread
         time.sleep(random.randint(1, 3))
-        print("Hello from thread {}".format(self._threadnum))
+        with STDOUT_LOCK:
+            print("Hello from thread {}".format(self._threadnum))
 
 
 for i in range(10):

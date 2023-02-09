@@ -23,7 +23,7 @@ print(df['alpha'], '\n')  # select column 'alpha'
 print_header("df.beta")
 print(df.beta, '\n')  # same, but alternate syntax (only works if column name is letters, digits, and underscores)
 
-print_header("df['b':'e']")
+print_header("df['b':'e']")  # one row   df['b':'b']
 print(df['b':'e'], '\n')  # select rows 'b' through 'e' using slice of row labels
 
 print_header("df[['alpha','epsilon','beta']]")

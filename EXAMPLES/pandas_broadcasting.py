@@ -21,10 +21,19 @@ print(df)
 print()
 
 print_header("Triple each value")
-print(df * 3)
+df_by3 = df * 3
+print(df_by3)
 print()  # multiply every value by 3
 
 print_header("Multiply column gamma by 1.5")
 df['gamma'] *= 1.5  # multiply values in column 'gamma' by 1.
 print(df)
 print()
+
+df['beta'] += 1000
+print(f"df['beta']: {df['beta']}")
+print()
+print(df)
+
+
+

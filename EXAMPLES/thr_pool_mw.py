@@ -13,7 +13,9 @@ SEARCH_TERMS = [  # terms to search for; each thread will search some of these t
     'sea', 'formula', 'translation', 'common',
     'business', 'frog', 'muntin', 'automobile',
     'green', 'connect','vial', 'battery', 'computer',
-    'sing', 'park', 'ladle', 'ram', 'dog', 'scalpel'
+    'sing', 'park', 'ladle', 'ram', 'dog', 'scalpel',
+    'matrix', 'rotary engine', 'saurabh', 'linguini',
+    'anaconda', 'naan', 'tort', 'asado',
 ]
 def main():
     for function in get_data_threaded, get_data_serial:
@@ -21,7 +23,6 @@ def main():
         results = function()
         total_time = time.time() - start_time
         for search_term, result in zip(SEARCH_TERMS, results):  # iterate over results, mapping them to search terms
-            results = function()
             print("{}:".format(search_term.upper()), end=" ")
             if result:
                 print(result)

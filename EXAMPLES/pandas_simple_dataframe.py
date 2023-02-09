@@ -1,7 +1,6 @@
 import pandas as pd
 from printheader import print_header
 
-
 cols = ['alpha', 'beta', 'gamma', 'delta', 'epsilon']  # column names
 indices = ['a', 'b', 'c', 'd', 'e', 'f']  # row names
 

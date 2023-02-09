@@ -31,8 +31,9 @@ for i, random_word in enumerate(WORDS, 1):
     t.start()  # start thread
 
 print("All threads launched...")
+print("WOrd list before:", WORD_LIST)
 
 for t in all_threads:
     t.join()  # wait for thread to finish
 
-print(WORD_LIST)
+print("WOrd list after:", WORD_LIST)
