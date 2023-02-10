@@ -2,7 +2,7 @@ import sys
 import logging
 import logging.handlers
 
-logger = logging.getLogger('ThisApplication')  # get logger for application
+logger = logging.getLogger(__name__)  # get logger for application
 logger.setLevel(logging.DEBUG)  # minimum log level
 
 if sys.platform == 'win32':

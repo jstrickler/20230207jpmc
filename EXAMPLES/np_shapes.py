@@ -22,7 +22,7 @@ print(a1.transpose())  # print transposed array
 print("------------------")
 
 a2 = np.arange(40)  # create 1D array
-a2.shape = 2, 5, 4  # reshape go 2x5x4
+a2.shape = 2, 5, 4  # reshape to 2x5x4
 
 print(a2)
 print()
