@@ -179,7 +179,7 @@ if __name__ == '__main__':
     print("*" * 60)
     print("*" * 60)
 
-    omdb = OMDBasync('b87452b6')
+    omdb = OMDBasync('YOUR API KEY')
 
     async def doit():
 
