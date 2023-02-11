@@ -6,7 +6,7 @@ POOL_SIZE = 8
 
 BASE_URL = 'https://www.dictionaryapi.com/api/v3/references/collegiate/json/'  # base url of site to access
 
-API_KEY = 'b619b55d-faa3-442b-a119-dd906adc79c8' # credentials to access site
+API_KEY = 'Your API Key' # credentials to access site
 
 SEARCH_TERMS = [  # terms to search for; each thread will search some of these terms
     'wombat', 'pine marten', 'python', 'pearl',
